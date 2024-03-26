@@ -6,7 +6,7 @@
             Para visualizar meus pedidos
 
             Contexto:
-            Dado que eu acesso a página de loginda EBAC-Shop
+            Dado que eu acesso a página de login da EBAC-Shop
 
             Cenário: Autenticação válida
             Quando eu digitar o <usuario> válido
@@ -33,5 +33,5 @@
             | "joao@ebac.com.br" | "" | "Usuário ou senha inválida" |
 
             // 1º neste esquema de cenário, pude testar um cenário de autenticação válida, porque login e senha estão corretos //
-            // 2º outro de usuário inexistente - pois o usuário do joão está digitado erronemanete //
+            // 2º outro de usuário inexistente - pois o usuário do joão está digitado erroneamente //
             // 3º também pude testar o cenário de autenticação inválida, visto que a senha foi digitada incorretamente, visto que foi deixada em branco //
