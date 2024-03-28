@@ -19,7 +19,7 @@
             Dado que eu esteja na página do <produto>
             Quando eu escolher a <cor>, o <tamanho> e a <qtde> desejada do <produto> 
             E clicar no botão "Adicionar produto ao carrinho"
-            Então deve salvar o <produto> no carrinho e exibir <mensagem> "Produto adicionado com sucesso ao carrinho"
+            Então deve salvar o <produto> no carrinho e exibir <mensagem> de sucesso
 
             Exemplos:
             | produto      | cor       | tamanho | qtde | mensagem

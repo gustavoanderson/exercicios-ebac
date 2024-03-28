@@ -25,12 +25,12 @@
             Cenário: Verificação do input de e-mail do tipo string
             Dado que eu complete todos os campos obrigatórios na tela de cadastro
             Quando eu digitar o <e-mail> com um e-mail que não seja um string válido para e-mail
-            Então exibir mensagem de alerta "Por favor, insira um e-mail válido para concluir o cadastro"
+            Então exibir <mensagem> de alerta "Por favor, insira um e-mail válido para concluir o cadastro"
 
             Esquema do Cenário: Verificação do input de e-mail do tipo string
             Dado que eu complete todos os campos obrigatórios na tela de cadastro
             Quando eu digitar o <e-mail> com um e-mail que não seja um string válido para e-mail
-            Então exibir mensagem "Por favor, insira um e-mail válido para concluir o cadastro"
+            Então exibir <mensagem> de alerta
     
             Exemplos:
             | nome       | sobrenome    | email               | pais     | endereco       | cep       | telefone    |                 mensagem                                      |                                          

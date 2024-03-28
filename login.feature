@@ -17,21 +17,17 @@
             Quando eu digitar <usuario> inexistente
             Então deve exibir <mensagem> de alerta: "Usuário inexistente"
 
-            Cenário: Usuário ou senha inválida
+            Cenário: Verificação de usuário ou senha inválida
             Quando eu digitar o <usuario> ou <senha> inválida
-            Então deve exibir uma <mensagem> de alerta "Usuário ou senha inválidos, favor tentar novamente"
+            Então deve exibir uma <mensagem> de alerta "Usuário ou senha inválida, favor tentar novamente"
 
             Esquema do Cenário: Verificar autenticação inválida
-            Quando eu digitar o <usuario> 
-            E a <senha>
-            Então deve exigir a <mensagem> de tentativa inválida "Usuário ou senha inválida, favor tentar novamente"
-
+            Quando eu digitar o <usuario> ou <senha> inválida
+            Então deve exibir uma <mensagem> de alerta 
+            
             Exemplos:
-            | usuario            | senha       | mensagem    |
-            | "joao@ebac.com.br" | "senha@123" | "Olá, João, seus pedidos são:" |
-            | "joao@ebrac.con.br" | "senha@123" | "Usuário inexistente!" |
-            | "joao@ebac.com.br" | "" | "Usuário ou senha inválida" |
+            | usuario             | senha       |                      mensagem                       |
+            | "joao@ebrac.con.br" | "senha@123" | "Usuário ou senha inválida, favor tentar novamente" |
+            | "joao@ebac.com.br"  | ""          | "Usuário ou senha inválida, favor tentar novamente" |
 
-            // 1º neste esquema de cenário, pude testar um cenário de autenticação válida, porque login e senha estão corretos //
-            // 2º outro de usuário inexistente - pois o usuário do joão está digitado erroneamente //
-            // 3º também pude testar o cenário de autenticação inválida, visto que a senha foi digitada incorretamente, visto que foi deixada em branco //
+    
